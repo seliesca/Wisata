@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <EditText
+        android:id="@+id/tdaftar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:hint="@string/daftar"
+        android:inputType="text"
+        android:padding="15dp"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:nextFocusDown="@id/nama"/>
+
+    <EditText
+         android:id="@+id/nama"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:padding="15dp"
+         android:hint="@string/tnama"
+         android:inputType="textPersonName|textCapWords"
+         android:nextFocusDown="@id/talamat"/>
+
+    <EditText
+         android:id="@+id/talamat"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="5dp"
+         android:padding="15dp"
+         android:hint="@string/talamat"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:checkedButton="@id/laki">
+
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laki-laki"/>
+
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Perempuan"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Agama"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:gravity="center"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:checkedButton="@id/islam">
+
+        <RadioButton
+            android:id="@+id/katolik"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:text="Katolik" />
+
+        <RadioButton
+            android:id="@+id/kristen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kristen" />
+
+        <RadioButton
+            android:id="@+id/hindu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hindu" />
+
+        <RadioButton
+            android:id="@+id/budha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Budha" />
+
+        <RadioButton
+            android:id="@+id/islam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Islam" />
+
+    </RadioGroup>
+
+    <RadioButton
+        android:id="@+id/penganut"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Penganut Aliran" />
+
+    <RadioButton
+        android:id="@+id/konghucu"
+        android:layout_width="115dp"
+        android:layout_height="wrap_content"
+        android:text="Konghucu"/>
+
+    <EditText
+        android:id="@+id/eemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:inputType="textEmailAddress"
+        android:nextFocusDown="@id/password"
+        android:hint="Masukkkan Email"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:inputType="textPassword"
+        android:hint="Masukkan Password"
+        android:cursorVisible="false"/>
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:hint="Masukkan Kembali Password"/>
+
+
+</LinearLayout>
